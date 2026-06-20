@@ -1,166 +1,53 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nitesh Blog | Tech Tricks & AI Tools</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#f5f7fa;
-    color:#333;
-}
-
-header{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-}
-
-header h1{
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-header p{
-    font-size:1.2rem;
-    color:#d1d5db;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:40px 0;
-}
-
-.about{
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    margin-bottom:30px;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-}
-
-.about h2{
-    margin-bottom:15px;
-}
-
-.posts{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card h3{
-    margin-bottom:10px;
-}
-
-.card p{
-    color:#666;
-}
-
-.categories{
-    margin-top:40px;
-}
-
-.tag{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    padding:8px 14px;
-    border-radius:20px;
-    margin:5px;
-}
-
-footer{
-    margin-top:50px;
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-    <h1>Nitesh Blog</h1>
-    <p>Tech Tricks • AI Tools • Productivity Hacks • Useful Websites</p>
-</header>
-
-<div class="container">
-
-```
-<section class="about">
-    <h2>About This Blog</h2>
-    <p>
-        Welcome to Nitesh Blog. Here I share practical tech tricks,
-        AI tools, productivity hacks, useful websites, Windows tips,
-        mobile tips, and digital tools that make everyday life easier.
-    </p>
-</section>
-
-<h2 style="margin-bottom:20px;">Featured Articles</h2>
-
-<div class="posts">
-
-    <div class="card">
-        <h3>10 Free AI Tools Everyone Should Use</h3>
-        <p>Discover powerful AI tools that can save hours every week.</p>
-    </div>
-
-    <div class="card">
-        <h3>Useful Websites You Didn't Know Exist</h3>
-        <p>Hidden websites that can improve your productivity.</p>
-    </div>
-
-    <div class="card">
-        <h3>Windows Tricks for Daily Life</h3>
-        <p>Simple Windows shortcuts and tricks that boost efficiency.</p>
-    </div>
-
-</div>
-
-<div class="categories">
-    <h2>Categories</h2>
-    <span class="tag">AI</span>
-    <span class="tag">Tech Tips</span>
-    <span class="tag">Windows</span>
-    <span class="tag">Android</span>
-    <span class="tag">Web Tools</span>
-    <span class="tag">Productivity</span>
-</div>
-```
-
-</div>
-
-<footer>
-    <p>© 2026 Nitesh Blog | Technology Made Simple & Useful</p>
-</footer>
-
-</body>
-</html>
+How to Use XLOOKUP in Excel - Practical Guide
+How to Use XLOOKUP in Excel: A Practical Real-World Example
+Excel Tips • Data Analysis • Productivity
+If you work with Excel regularly, XLOOKUP is one of the most powerful functions you can learn. It replaces VLOOKUP and HLOOKUP while offering greater flexibility, accuracy, and simplicity.
+The Problem
+Suppose you have the following Product Master table:
+Product ID
+Product Name
+P1001
+Laptop
+P1002
+Keyboard
+P1003
+Mouse
+P1004
+Monitor
+And a sales report containing only Product IDs:
+Product ID
+Product Name
+P1003
+?
+P1001
+?
+P1004
+?
+Instead of manually typing product names, we can use XLOOKUP.
+XLOOKUP Formula
+=XLOOKUP(A2,$F2:F5,G2:G$5,“Not Found”)
+Explanation: A2 = Lookup Value F2:F5 = Lookup Array G2:G5 = Return Array “Not Found” = Value returned if no match is found
+Why XLOOKUP is Better Than VLOOKUP
+	Easier Syntax
+=VLOOKUP(A2,F:G,2,FALSE)
+Equivalent XLOOKUP:
+=XLOOKUP(A2,F:F,G:G)
+XLOOKUP is easier to read and maintain.
+	Search Left or Right
+VLOOKUP can only search to the right. XLOOKUP can return values from any direction, making your spreadsheets more flexible.
+	Built-in Error Handling
+=XLOOKUP(A2,F:F,G:G,“Product Not Found”)
+No need to wrap the formula inside IFERROR.
+Practical Supply Chain Example
+In inventory management and supply chain reporting, XLOOKUP can automatically fetch:
+Product Name
+Category
+Brand
+Warehouse Location
+Supplier Information
+This reduces manual work, improves report accuracy, and saves valuable time.
+Final Thoughts
+If you are still using VLOOKUP, it is time to switch to XLOOKUP. It is faster, simpler, and more reliable for real-world business reporting.
+Whether you are a student, analyst, accountant, or supply chain professional, mastering XLOOKUP can save hours of manual work every week.
+© 2026 Nitesh Blog | Tech Tricks & Productivity Guides
